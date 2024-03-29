@@ -1,8 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711721143
-icon.svg::CompressedTexture2D::1783888694501911045::1711708888::1711708900::1::::<><>::
-Light_blue.png::CompressedTexture2D::506442809691844905::1711718966::1711718968::1::::<><>::
-main.tscn::PackedScene::7208917012318010462::1711719779::0::1::::<><>::uid://hhlblgetbmnh::::res://Light_blue.png
-pngfind.com-submarine-png-1287089.png::CompressedTexture2D::2210476414074289474::1711721057::1711721146::1::::<><>::
-::res://scenes/::1711718790
-game.tscn::PackedScene::1772377039972278102::1711718790::0::1::::<><>::
+::res://::1711724119
+::res://assets/::1711724033
+Light_blue.png::CompressedTexture2D::506442809691844905::1711722225::1711722761::1::::<><>::
+pngfind.com-submarine-png-1287089.png::CompressedTexture2D::2210476414074289474::1711722225::1711722763::1::::<><>::
+::res://scenes/::1711724057
+main.tscn::PackedScene::7208917012318010462::1711724141::0::1::::<><>::
+player.tscn::PackedScene::993327281739117569::1711724047::0::1::::<><>::res://scritps/player.gd<>uid://6q1hup15o6o1::::res://assets/pngfind.com-submarine-png-1287089.png
+::res://scritps/::1711723939
+player.gd::GDScript::-1::1711723733::0::1::::<>CharacterBody2D<>::

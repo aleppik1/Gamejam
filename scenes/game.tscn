@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dayb2sksuee6q"]
+
+[ext_resource type="PackedScene" uid="uid://off7qhktphyn" path="res://scenes/player.tscn" id="1_yeban"]
+[ext_resource type="Texture2D" uid="uid://hhlblgetbmnh" path="res://assets/Light_blue.png" id="2_rpb5q"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_yeban")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_rpb5q")
