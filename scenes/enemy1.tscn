@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd0d3ek0n42wx"]
+
+[ext_resource type="Script" path="res://scritps/enemy1.gd" id="1_7hbnc"]
+[ext_resource type="Texture2D" uid="uid://bio3nlv2g0clc" path="res://assets/Red TD/64x64 Frames/64x64 1.png" id="1_rcdps"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_frym1"]
+radius = 24.0832
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource("1_7hbnc")
+
+[node name="texture" type="Sprite2D" parent="."]
+texture = ExtResource("1_rcdps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -7)
+shape = SubResource("CircleShape2D_frym1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
