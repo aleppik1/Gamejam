@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7g20mqa5yw8m"]
+[gd_scene load_steps=4 format=3 uid="uid://off7qhktphyn"]
 
-[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_alv6v"]
-[ext_resource type="Texture2D" uid="uid://6q1hup15o6o1" path="res://pngfind.com-submarine-png-1287089.png" id="1_qjkt7"]
+[ext_resource type="Script" path="res://scritps/character_body_2d.gd" id="1_3kek6"]
+[ext_resource type="Texture2D" uid="uid://6q1hup15o6o1" path="res://assets/pngfind.com-submarine-png-1287089.png" id="1_qjkt7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73nue"]
 size = Vector2(352, 170)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(34, 56)
-script = ExtResource("1_alv6v")
+script = ExtResource("1_3kek6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(194, 104)
