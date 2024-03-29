@@ -1,25 +1,32 @@
 [gd_scene load_steps=4 format=3 uid="uid://off7qhktphyn"]
 
 [ext_resource type="Script" path="res://scritps/player.gd" id="1_3kek6"]
-[ext_resource type="Texture2D" uid="uid://6q1hup15o6o1" path="res://assets/pngfind.com-submarine-png-1287089.png" id="1_qjkt7"]
+[ext_resource type="Texture2D" uid="uid://cdfh2lwllsmg2" path="res://assets/submarinePlayer.png" id="2_jvefo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_73nue"]
-size = Vector2(245, 92)
+[sub_resource type="CircleShape2D" id="CircleShape2D_w06fx"]
+radius = 67.082
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(34, 56)
+collision_mask = 12
 script = ExtResource("1_3kek6")
 
 [node name="Texture" type="Sprite2D" parent="."]
 position = Vector2(-34, -56)
-scale = Vector2(0.175767, 0.266616)
-texture = ExtResource("1_qjkt7")
+scale = Vector2(1, 1.517)
+texture = ExtResource("2_jvefo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-34, -54)
-shape = SubResource("RectangleShape2D_73nue")
+shape = SubResource("CircleShape2D_w06fx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
 limit_left = 0
 limit_top = 0
 limit_right = 1280
+
+[node name="playerPos" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="playerPos" to="." method="_on_player_pos_timeout"]
