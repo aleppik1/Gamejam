@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://s6xlwv7dotn6"]
+
+[ext_resource type="Script" path="res://scritps/enemy2.gd" id="1_12sop"]
+[ext_resource type="Texture2D" uid="uid://b0i0mrg5o7utn" path="res://assets/playerShip1_blue.png" id="2_c83qf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vqj6x"]
+radius = 36.0555
+
+[node name="Enemy" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_12sop")
+
+[node name="texture" type="Sprite2D" parent="."]
+texture = ExtResource("2_c83qf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vqj6x")
