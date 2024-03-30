@@ -1,23 +1,47 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd0d3ek0n42wx"]
+[gd_scene load_steps=7 format=3 uid="uid://bd0d3ek0n42wx"]
 
 [ext_resource type="Script" path="res://scritps/enemy1.gd" id="1_7hbnc"]
-[ext_resource type="Texture2D" uid="uid://dk2hq1ly18glj" path="res://assets/Red TD/8x8 Frames/8x8 1.png" id="2_bq516"]
+[ext_resource type="Texture2D" uid="uid://v5d0n5mhmb6p" path="res://assets/fish1.png" id="2_etver"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_frym1"]
-radius = 31.0161
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1ykl"]
+atlas = ExtResource("2_etver")
+region = Rect2(0, 0, 382, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ued4r"]
+atlas = ExtResource("2_etver")
+region = Rect2(382, 0, 382, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t6umk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1ykl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ued4r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p1bg8"]
+radius = 21.0
+height = 236.0
 
 [node name="Enemy" type="Area2D"]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_7hbnc")
 
-[node name="texture" type="Sprite2D" parent="."]
+[node name="texture" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
-scale = Vector2(10, 10)
-texture = ExtResource("2_bq516")
+rotation = 1.5708
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_t6umk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5, -1)
-shape = SubResource("CircleShape2D_frym1")
+shape = SubResource("CapsuleShape2D_p1bg8")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

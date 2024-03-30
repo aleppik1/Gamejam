@@ -1,30 +1,39 @@
 [gd_scene load_steps=5 format=3 uid="uid://off7qhktphyn"]
 
 [ext_resource type="Script" path="res://scritps/player.gd" id="1_3kek6"]
-[ext_resource type="Texture2D" uid="uid://bctqdyaei728u" path="res://assets/submarine.png" id="2_c7cye"]
-[ext_resource type="PackedScene" uid="uid://2jvbikyfice8" path="res://scenes/gun.tscn" id="3_co24t"]
+[ext_resource type="Texture2D" uid="uid://cdfh2lwllsmg2" path="res://assets/submarinePlayer.png" id="2_jvefo"]
+[ext_resource type="Texture2D" uid="uid://cxs7kcbec8p0g" path="res://assets/light.png" id="3_pdkyf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_73nue"]
-size = Vector2(119, 83)
+[sub_resource type="CircleShape2D" id="CircleShape2D_w06fx"]
+radius = 67.082
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(68, 72)
+position = Vector2(34, 56)
+collision_mask = 28
 script = ExtResource("1_3kek6")
 
 [node name="Texture" type="Sprite2D" parent="."]
-position = Vector2(-24.3125, -59.3085)
-scale = Vector2(0.784, 0.771)
-texture = ExtResource("2_c7cye")
+position = Vector2(-26, -48)
+scale = Vector2(1, 1.517)
+texture = ExtResource("2_jvefo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-25.5, -61.5)
-shape = SubResource("RectangleShape2D_73nue")
+visible = false
+position = Vector2(-34, -54)
+shape = SubResource("CircleShape2D_w06fx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-28, -53)
+zoom = Vector2(0.2, 0.2)
 limit_left = 0
 limit_top = 0
 limit_right = 1280
+limit_bottom = 6100
 
-[node name="Gun" parent="." instance=ExtResource("3_co24t")]
-position = Vector2(-56, -23)
+[node name="playerPos" type="Timer" parent="."]
+autostart = true
+
+[node name="Light" type="Sprite2D" parent="."]
+position = Vector2(54, -129)
+texture = ExtResource("3_pdkyf")
+
+[connection signal="timeout" from="playerPos" to="." method="_on_player_pos_timeout"]

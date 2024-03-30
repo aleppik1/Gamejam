@@ -1,18 +1,54 @@
-[gd_scene load_steps=4 format=3 uid="uid://s6xlwv7dotn6"]
+[gd_scene load_steps=8 format=3 uid="uid://s6xlwv7dotn6"]
 
 [ext_resource type="Script" path="res://scritps/enemy2.gd" id="1_12sop"]
-[ext_resource type="Texture2D" uid="uid://b0i0mrg5o7utn" path="res://assets/playerShip1_blue.png" id="2_c83qf"]
+[ext_resource type="Texture2D" uid="uid://dj6mfgmfj5032" path="res://assets/fish2.png" id="2_v6m6w"]
+[ext_resource type="AudioStream" uid="uid://b0c6xl3garnp0" path="res://assets/mp3/squid_shoot_sound.mp3" id="3_n4rgl"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vqj6x"]
-radius = 36.0555
+[sub_resource type="AtlasTexture" id="AtlasTexture_on4yi"]
+atlas = ExtResource("2_v6m6w")
+region = Rect2(0, 0, 382, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxmpc"]
+atlas = ExtResource("2_v6m6w")
+region = Rect2(382, 0, 382, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bxtvs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on4yi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxmpc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6krsp"]
+radius = 23.0
+height = 202.0
 
 [node name="Enemy" type="Area2D"]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_12sop")
 
-[node name="texture" type="Sprite2D" parent="."]
-texture = ExtResource("2_c83qf")
+[node name="texture" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_bxtvs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_vqj6x")
+shape = SubResource("CapsuleShape2D_6krsp")
+
+[node name="projectile" type="Node" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="projectile"]
+stream = ExtResource("3_n4rgl")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

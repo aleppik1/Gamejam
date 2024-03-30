@@ -17,8 +17,18 @@ func _physics_process(delta):
 		global_position.x = 0;
 	elif global_position.y < 80:
 		global_position.y = 80;
-	elif global_position.y > 10000:
-		global_position.y = 2000;
+	elif global_position.y > 6100:
+		global_position.y = 6100;
 
 func _on_player_pos_timeout():
 	emit_signal("playerPosition", global_position)
+
+
+func _on_bottom_body_entered(body):
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+
+func player_dead():
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+
+func _on_dead_zone_area_entered(area):
+	area.queue_free()
