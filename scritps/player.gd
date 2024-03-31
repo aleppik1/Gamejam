@@ -1,6 +1,6 @@
 extends CharacterBody2D
 signal playerPosition
-@export var speed = 400
+@export var speed = 4000
 
 
 func get_input():
@@ -28,7 +28,7 @@ func _on_bottom_body_entered(body):
 	get_tree().change_scene_to_file("res://scenes/final_cutscene.tscn")
 
 func player_dead():
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/death_cutscene.tscn")
 
 func _on_dead_zone_area_entered(area):
 	area.queue_free()

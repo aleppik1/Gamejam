@@ -1,0 +1,13 @@
+res://scenes/bullet.tscn::a2eaf5adbd5233da5487fceb9ae5be52::1711842266::res://.godot/exported/133200997/export-6d8e6ff1e6f20a36e0402d27c623c86c-bullet.scn
+res://scenes/enemy1.tscn::a0e3a65962d3858208911474cdf882bf::1711852823::res://.godot/exported/133200997/export-8d3b3d57916d53665ee70dc6a536dcb4-enemy1.scn
+res://scenes/enemy2.tscn::42f16da466c5562247ffa55ab5823c02::1711852823::res://.godot/exported/133200997/export-bcb51a5b5572427d86fe778a352fb2cc-enemy2.scn
+res://scenes/enemy_proj.tscn::38695feea16c640ce882d35a0b763721::1711842267::res://.godot/exported/133200997/export-36ea4e56b87eac8b592c2ef71612e7fa-enemy_proj.scn
+res://scenes/enemy_spawner.tscn::6b34f4bb2cb471a41e97f01b7739e1c1::1711808290::res://.godot/exported/133200997/export-e56eb753f9e7a01522dd85211d4eb598-enemy_spawner.scn
+res://scenes/final_cutscene.tscn::17b856fb5f0988bf9b55f9ab39108877::1711852823::res://.godot/exported/133200997/export-8ad078da9f9459cdac490c99eb76bf95-final_cutscene.scn
+res://scenes/game.tscn::25025bdf66519a6e63e12aee92056982::1711852823::res://.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn
+res://scenes/gun.tscn::fc7a6c44258034c3b5853debe32b2ff4::1711852821::res://.godot/exported/133200997/export-e8b70ebe6a89c3504564097573c2ce26-gun.scn
+res://scenes/level_1.tscn::2d8ff172879b8dfdb908d62b5a6396c8::1711852821::res://.godot/exported/133200997/export-6887eba858c6ae48b5ca13a7525fa2f9-level_1.scn
+res://scenes/menu.tscn::54d9a3d860e9596c7737ed1eb86482b4::1711852823::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/not_final_cutscene.tscn::d044d9db83010a062e99c8ddfb909e7c::1711852823::res://.godot/exported/133200997/export-d51aada2211f59afbef1571d4d3fd542-not_final_cutscene.scn
+res://scenes/player.tscn::dca4d1eab2e70e3e4e17c707bc8e1d07::1711852821::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/shop.tscn::393a3096bfdfff44b6dd2ff1d0c6f886::1711842267::res://.godot/exported/133200997/export-4b603ba22abe1ca4e7b53e2c2e7d249e-shop.scn
