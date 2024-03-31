@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtxr50u1mrrsp"]
+
+[ext_resource type="VideoStream" path="res://assets/OGV(vidija)/intro.ogv" id="1_04hry"]
+[ext_resource type="Script" path="res://scenes/not_final_cutscene.gd" id="1_vjavy"]
+
+[node name="notfinalcutscene" type="Node2D"]
+script = ExtResource("1_vjavy")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = -10.0
+offset_right = 5292.0
+offset_bottom = 3538.0
+scale = Vector2(2.38, 1.4)
+stream = ExtResource("1_04hry")
+autoplay = true
+loop = true
+
+[node name="startgaming" type="Button" parent="."]
+offset_left = 1027.0
+offset_top = 586.0
+offset_right = 1249.0
+offset_bottom = 673.0
+text = "Start gaming"
+
+[connection signal="pressed" from="startgaming" to="." method="_on_startgaming_pressed"]

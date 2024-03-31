@@ -25,7 +25,7 @@ func _on_player_pos_timeout():
 
 
 func _on_bottom_body_entered(body):
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/final_cutscene.tscn")
 
 func player_dead():
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
