@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="gamejam"
+config/name="My Keys Drowned!"
 run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/keys.png"
 
 [display]
 

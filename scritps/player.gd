@@ -1,6 +1,6 @@
 extends CharacterBody2D
 signal playerPosition
-@export var speed = 4000
+@export var speed = 400
 
 
 func get_input():

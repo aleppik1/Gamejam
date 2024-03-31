@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711853578
+::res://::1711871917
 bullet.gd::GDScript::-1::1711842266::0::1::::<>Area2D<>::
-export_presets.cfg::TextFile::-1::1711834246::0::1::::<><>::
-::res://assets/::1711869795
+export_presets.cfg::TextFile::-1::1711871865::0::1::::<><>::
+::res://assets/::1711869797
 back1.png::CompressedTexture2D::4080691089970835870::1711842267::1711842267::1::::<><>::
 back2.png::CompressedTexture2D::5351690571949393908::1711842267::1711842267::1::::<><>::
 fish1.png::CompressedTexture2D::1536124574549132801::1711842267::1711842267::1::::<><>::
@@ -27,10 +27,11 @@ weight.png::CompressedTexture2D::5703654974654119665::1711842267::1711842267::1:
 ::res://assets/mp3/::1711851471
 squid_shoot_sound.mp3::AudioStreamMP3::4147194451472274707::1711842267::1711842267::1::::<><>::
 underwata_mausic.wav::AudioStreamWAV::709576380258118883::1711851410::1711851471::1::::<><>::
-::res://assets/OGV(vidija)/::1711869021
+::res://assets/OGV(vidija)/::1711871581
 GOrvxBkrTkHBZ5ABAMLKBgLchmRJbmdjAAAF.ogv::VideoStreamTheora::-1::1711836530::0::1::::<><>::
 intro.ogv::VideoStreamTheora::-1::1711848739::0::1::::<><>::
 My_Movie.ogv::VideoStreamTheora::-1::1711844705::0::1::::<><>::
+you_are_my_sunshine_sibul_1.ogv::VideoStreamTheora::-1::1711871554::0::1::::<><>::
 YOU_DIED.ogv::VideoStreamTheora::-1::1711868969::0::1::::<><>::
 ::res://assets/Red TD/::1711808290
 ::res://assets/Red TD/8x8 Frames/::1711738240
@@ -125,32 +126,34 @@ YOU_DIED.ogv::VideoStreamTheora::-1::1711868969::0::1::::<><>::
 64x64 20.png::CompressedTexture2D::18534443249712183::1711738213::1711738240::1::::<><>::
 64x64 21.png::CompressedTexture2D::7014887028764385263::1711738213::1711738240::1::::<><>::
 64x64 22.png::CompressedTexture2D::3301462157224326241::1711738213::1711738240::1::::<><>::
-::res://scenes/::1711869303
+::res://scenes/::1711871802
 bullet.tscn::PackedScene::5353068406949087750::1711842266::0::1::::<><>::res://bullet.gd<>uid://ctda2bj45fk87::::res://assets/projectile.png
-enemy1.tscn::PackedScene::2648829038362203591::1711869303::0::1::::<><>::res://scritps/enemy1.gd<>uid://v5d0n5mhmb6p::::res://assets/fish1.png
-enemy2.tscn::PackedScene::1328812219840129669::1711869303::0::1::::<><>::res://scritps/enemy2.gd<>uid://dj6mfgmfj5032::::res://assets/fish2.png<>uid://b0c6xl3garnp0::::res://assets/mp3/squid_shoot_sound.mp3
+death_cutscene.gd::GDScript::-1::1711868265::0::1::::<>Node2D<>::
+death_cutscene.tscn::PackedScene::4273959519873057035::1711871801::0::1::::<><>::res://scenes/death_cutscene.gd<>res://assets/OGV(vidija)/YOU_DIED.ogv
+enemy1.tscn::PackedScene::2648829038362203591::1711871801::0::1::::<><>::res://scritps/enemy1.gd<>uid://v5d0n5mhmb6p::::res://assets/fish1.png
+enemy2.tscn::PackedScene::1328812219840129669::1711871801::0::1::::<><>::res://scritps/enemy2.gd<>uid://dj6mfgmfj5032::::res://assets/fish2.png<>uid://b0c6xl3garnp0::::res://assets/mp3/squid_shoot_sound.mp3
 enemy_proj.tscn::PackedScene::934407428991729573::1711842267::0::1::::<><>::res://scritps/enemy_proj.gd<>uid://ciobaywsjq5vo::::res://assets/projectile2.png
 enemy_spawner.tscn::PackedScene::8677493742753753332::1711808290::0::1::::<><>::res://scritps/enemy_spawner.gd
 final_cutscene.gd::GDScript::-1::1711850810::0::1::::<>Node2D<>::
-final_cutscene.tscn::PackedScene::6825244854154389699::1711869303::0::1::::<><>::res://assets/OGV(vidija)/My_Movie.ogv<>res://scenes/final_cutscene.gd
-game.tscn::PackedScene::7208917012318010462::1711869303::0::1::::<><>::uid://off7qhktphyn::::res://scenes/player.tscn<>uid://ciintdqdj1sky::::res://assets/back2.png<>uid://dvvpb3uertmp5::::res://scenes/enemy_spawner.tscn<>res://scritps/game.gd<>uid://dv0d06qnhb81t::::res://assets/sand.png<>uid://dl0tg8ltdflxq::::res://assets/keys.png<>uid://d2uuv8rsl6sdy::::res://scenes/menu.tscn
+final_cutscene.tscn::PackedScene::6825244854154389699::1711871801::0::1::::<><>::res://assets/OGV(vidija)/My_Movie.ogv<>res://scenes/final_cutscene.gd
+game.tscn::PackedScene::7208917012318010462::1711871801::0::1::::<><>::uid://off7qhktphyn::::res://scenes/player.tscn<>uid://ciintdqdj1sky::::res://assets/back2.png<>uid://dvvpb3uertmp5::::res://scenes/enemy_spawner.tscn<>res://scritps/game.gd<>uid://dv0d06qnhb81t::::res://assets/sand.png<>uid://dl0tg8ltdflxq::::res://assets/keys.png<>uid://d2uuv8rsl6sdy::::res://scenes/menu.tscn
 gun.gd::GDScript::-1::1711842266::0::1::::<>Area2D<>::
-gun.tscn::PackedScene::1914955457387707073::1711869301::0::1::::<><>::res://scenes/gun.gd<>uid://be10eeo6mqk8h::::res://assets/gun.png
-level_1.tscn::PackedScene::910568851786528632::1711869301::0::1::::<><>::
-menu.tscn::PackedScene::9096901986280711662::1711869303::0::1::::<><>::res://scritps/menu.gd<>uid://bunncs5h86taw::::res://assets/PREVIEW.png<>uid://kdyvb6prrlwt::::res://assets/mp3/underwata_mausic.wav
+gun.tscn::PackedScene::1914955457387707073::1711871799::0::1::::<><>::res://scenes/gun.gd<>uid://be10eeo6mqk8h::::res://assets/gun.png
+level_1.tscn::PackedScene::910568851786528632::1711871799::0::1::::<><>::
+menu.tscn::PackedScene::9096901986280711662::1711871801::0::1::::<><>::res://scritps/menu.gd<>uid://bkbrb48225ka7::::res://assets/main_menu_update.png<>uid://kdyvb6prrlwt::::res://assets/mp3/underwata_mausic.wav
 not_final_cutscene.gd::GDScript::-1::1711850810::0::1::::<>Node2D<>::
-not_final_cutscene.tscn::PackedScene::8541417876417357503::1711869303::0::1::::<><>::res://assets/OGV(vidija)/intro.ogv<>res://scenes/not_final_cutscene.gd
-player.tscn::PackedScene::993327281739117569::1711869301::0::1::::<><>::res://scritps/player.gd<>uid://cdfh2lwllsmg2::::res://assets/submarinePlayer.png<>uid://cxs7kcbec8p0g::::res://assets/light.png
-death_cutscene.tscn::PackedScene::4273959519873057035::1711869303::0::1::::<><>::res://scenes/death_cutscene.gd<>res://assets/OGV(vidija)/YOU_DIED.ogv
-death_cutscene.gd::GDScript::-1::1711868265::0::1::::<>Node2D<>::
+not_final_cutscene.tscn::PackedScene::8541417876417357503::1711871801::0::1::::<><>::res://assets/OGV(vidija)/intro.ogv<>res://scenes/not_final_cutscene.gd
+player.tscn::PackedScene::993327281739117569::1711871799::0::1::::<><>::res://scritps/player.gd<>uid://cdfh2lwllsmg2::::res://assets/submarinePlayer.png<>uid://cxs7kcbec8p0g::::res://assets/light.png
+secretfunny.gd::GDScript::-1::1711870363::0::1::::<>Node2D<>::
+secretfunny.tscn::PackedScene::2357636905497498760::1711871802::0::1::::<><>::res://scenes/secretfunny.gd<>res://assets/OGV(vidija)/you_are_my_sunshine_sibul_1.ogv
 shop.tscn::PackedScene::4477079738895534812::1711842267::0::1::::<><>::uid://data8x04yvw3j::::res://assets/shop4x.png<>res://scritps/shop.gd<>uid://cxs7kcbec8p0g::::res://assets/light.png<>uid://bqjktro5rjx51::::res://assets/shield.png<>res://scritps/exit.gd<>uid://bgdkquu0oicwg::::res://assets/gun.png<>uid://cni5mm6kf0hnd::::res://assets/weight.png<>uid://dubhmjw36618c::::res://assets/texture.png
-::res://scritps/::1711869298
+::res://scritps/::1711870363
 enemy1.gd::GDScript::-1::1711842267::0::1::::<>Area2D<>::
 enemy2.gd::GDScript::-1::1711845061::0::1::::<>Area2D<>::
 enemy_proj.gd::GDScript::-1::1711842267::0::1::::<>Area2D<>::
 enemy_spawner.gd::GDScript::-1::1711842267::0::1::::<>Node2D<>::
 exit.gd::GDScript::-1::1711842267::0::1::::<>Area2D<>::
 game.gd::GDScript::-1::1711845279::0::1::::<>TileMap<>::
-menu.gd::GDScript::-1::1711850619::0::1::::<>Control<>::
+menu.gd::GDScript::-1::1711870363::0::1::::<>Control<>::
 player.gd::GDScript::-1::1711869298::0::1::::<>CharacterBody2D<>::
 shop.gd::GDScript::-1::1711842267::0::1::::<>Node2D<>::

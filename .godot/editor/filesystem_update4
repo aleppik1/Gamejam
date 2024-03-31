@@ -7,9 +7,6 @@ res://scenes/enemy2.tscn
 res://scenes/menu.tscn
 res://scenes/final_cutscene.tscn
 res://scenes/not_final_cutscene.tscn
-res://scenes/death_cutscene.gd
 res://scenes/death_cutscene.tscn
-res://scritps/player.gd
-res://scritps/menu.gd
-res://scenes/secretfunny.gd
 res://scenes/secretfunny.tscn
+res://scritps/player.gd
